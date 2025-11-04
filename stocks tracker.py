@@ -1,15 +1,15 @@
 import requests
 from twilio.rest import Client
 
-api_key = "XY6F5VHPJH8XB7B5"
+api_key = "Your api key"
 url= "https://www.alphavantage.co/query"
-NEWS_API_KEY = "718b2cecf7a545ffadb6a6bd314b8fe8"
+NEWS_API_KEY = "Your api key"
 News_Url = "https://newsapi.org/v2/everything"
 COMPANY_NAME  = "TSLA"
-TWILIO_SID = "AC3ed4ed4c595dd4df416a28367678bec0"
-TWILIO_AUTH_TOKEN = "b7165c08e97060749231c91f7afcf207"
-TWILIO_PHONE_NUM = "+14789998269"
-MY_PHONE = "+917990195921"
+TWILIO_SID = "Your SID"
+TWILIO_AUTH_TOKEN = "Your Auth token"
+TWILIO_PHONE_NUM = "your twilio phone"
+MY_PHONE = "personal num"
 
 
 
@@ -18,7 +18,7 @@ parameters ={
     "function":"TIME_SERIES_INTRADAY",
     "symbol":"TSLA",
     "interval":"30min",
-    "apikey":"XY6F5VHPJH8XB7B5",
+    "apikey":"your api",
 }
 
 response = requests.get(url=url,params=parameters)
@@ -70,4 +70,5 @@ if abs(diff_percent) > 0.01 :
             to=MY_PHONE,
             
         )
+
 
